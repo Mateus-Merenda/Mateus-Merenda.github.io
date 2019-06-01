@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Aula 31-05-2019</title>
+</head>
+<body>
+
+	
+	<form action="https://www.google.com/search" method="get">
+		<p>
+			Pesquisar: 
+		<input type="text" name="q" size="50" maxlength="40" title="as" placeholder="Digite a sua pesquisa: ">
+		<input type="password" name="senha" size="10" maxlength="8" title="senha" placeholder="senha">
+		<input type="submit" value="BUSCAR">
+		<input type="submit" value="LIMPAR">
+		<b><br><br>Você deseja trabalhar como webmaster?<br></b>
+
+		<input type="radio" name="sim" value="valor" id="sim">
+		<label for="sim"> Sim<br></label>
+		<input type="radio" name="nao" value="valor" id="nao"> 
+		<label for="nao"> Não<br></label>
+		<input type="radio" name="talvez" value="valor" id="talvez">
+		<label for="talvez"> Talvez<br></label>
+		<input type="radio" name="butao" value="valor" id="quemsabe">
+		<label for="quemsabe"> Quem Sabe<br></label>
+		<input type="radio" name="butao" value="valor" id="jamais"> 
+		<label for="jamais"> JAMAIS!<br></label>
+
+		<fieldset>
+			<label for="nome"> Nome: </label>
+			<input type="text" name="nome" id="1"><br>
+			<label for="email"> E-mail: </label>
+			<input type="text" name="email" id="email">
+		</fieldset>
+
+		<b><br><br>O que deseja aprender?<br></b>
+		<input type="checkbox" name="butao" value="valor" > HTML<br>
+		<input type="checkbox" name="butao" value="valor" > CSS<br>
+		<input type="checkbox" name="butao" value="valor" > JavaScript<br>
+		<input type="checkbox" name="butao" value="valor" > PHP<br>
+		<input type="checkbox" name="butao" value="valor" > Magia negra<br>
+		<input type="submit" value="BUSCAR" name="valor">
+		
+	</form>
+
+	<form>
+	Opções:<br>
+		<select name="nomeMenu" size="7" multiple="">
+		<optgroup label="Linguagens para Web">
+			<option value="1" > HTML </option>
+			<option value="2"> CSS </option>
+			<option value="3" selected=""> JavaScript </option>
+		</optgroup>
+
+		<optgroup label="Linguagens para Desktop">
+			<option value="6"> C </option>
+			<option value="5"> C++ </option>
+			<option value="4"> Java </option>
+		</optgroup>
+		</select>
+	</form>
+
+	<form>
+	Múltipla escolha:<br>
+		<select name="nomeMenu" size="7" multiple="">
+		<optgroup label="Linguagens para Web">
+			<option value="1" > HTML </option>
+			<option value="2"> CSS </option>
+			<option value="3" selected=""> JavaScript </option>
+		</optgroup>
+
+		<optgroup label="Linguagens para Desktop">
+			<option value="6"> C </option>
+			<option value="5"> C++ </option>
+			<option value="4"> Java </option>
+		</optgroup>
+		</select>
+	</form>
+
+	<form>
+		<textarea rows="10" cols="40" maxlength="400" >Digite seu texto aqui dentro.</textarea>
+	</form>
+
+	<form>
+		<input type="file" name="html">
+		<input type="email" name="">
+		<input type="date" name="">
+		<input type="month" name="">
+		<input type="week" name="">
+		<input type="time" name="">
+		<input type="datetime" name="">
+		<input type="datetime-local" name="">
+		<input type="search" name="">
+		<input type="number" name="">
+		<input type="range" name="">
+		<input type="color" name="">
+		<input type="tel" name="">
+		<input type="url" name="">
+	</form>
+
+	<!--	
+		<form>
+			<input id="country_name" name="country_name" type="text" list="country">
+			<input type="button" name="salvar">
+				<datalist id="country">
+					<option value="Afeganistão">
+					<option value="Albânia">
+					<option value="Algéria">
+					<option value="Andorra">
+					<option value="Angola">
+				</datalist>
+		</form>
+	-->
+
+</body>
+</html>
