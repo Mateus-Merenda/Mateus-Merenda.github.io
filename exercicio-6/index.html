@@ -1,100 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8">
-	<title>Formulário</title>
+	<meta charset="utf-8">
+	<title>Aula 31-05-2019</title>
 </head>
 <body>
-	<h1>Aulas de Hipermídias</h1>
-	<h2>Preencha o formulário abaixo: </h2>	
+
+	
+	<form action="https://www.google.com/search" method="get">
+		<p>
+			Pesquisar: 
+		<input type="text" name="q" size="50" maxlength="40" title="as" placeholder="Digite a sua pesquisa: ">
+		<input type="password" name="senha" size="10" maxlength="8" title="senha" placeholder="senha">
+		<input type="submit" value="BUSCAR">
+		<input type="submit" value="LIMPAR">
+		<b><br><br>Você deseja trabalhar como webmaster?<br></b>
+
+		<input type="radio" name="sim" value="valor" id="sim">
+		<label for="sim"> Sim<br></label>
+		<input type="radio" name="nao" value="valor" id="nao"> 
+		<label for="nao"> Não<br></label>
+		<input type="radio" name="talvez" value="valor" id="talvez">
+		<label for="talvez"> Talvez<br></label>
+		<input type="radio" name="butao" value="valor" id="quemsabe">
+		<label for="quemsabe"> Quem Sabe<br></label>
+		<input type="radio" name="butao" value="valor" id="jamais"> 
+		<label for="jamais"> JAMAIS!<br></label>
+
+		<fieldset>
+			<label for="nome"> Nome: </label>
+			<input type="text" name="nome" id="1"><br>
+			<label for="email"> E-mail: </label>
+			<input type="text" name="email" id="email">
+		</fieldset>
+
+		<b><br><br>O que deseja aprender?<br></b>
+		<input type="checkbox" name="butao" value="valor" > HTML<br>
+		<input type="checkbox" name="butao" value="valor" > CSS<br>
+		<input type="checkbox" name="butao" value="valor" > JavaScript<br>
+		<input type="checkbox" name="butao" value="valor" > PHP<br>
+		<input type="checkbox" name="butao" value="valor" > Magia negra<br>
+		<input type="submit" value="BUSCAR" name="valor">
+		
+	</form>
 
 	<form>
-		<fieldset name="dadosPessoais"> <legend>Dados Pessoais</legend>
-			<label for="1"><br> Nome:</label>
-			<input type="text" size="16" maxlength="12" name="nome" id="1" autofocus required>
-			<label for="2">Sobrenome: </label>
-			<input type="text" size="16" maxlength="12" name="sobrenome" id="2"> <br>
-			<label for="3"><br>Data de Nascimento: </label>
-			<input type="text" size="4" placeholder="dd" maxlength="2" name="dia" id="3">
-			<input type="text" size="4" placeholder="mm" maxlength="2" name="mes" id="4">
-			<input type="text" size="6" placeholder="aaaa" maxlength="4" name="ano" id="5">
-			<label for="6"><br><br>RG:</label>
-			<input type="text" size="13" maxlength="13" name="rg" id="6">
-			<label for="7-1"><br><br>CPF: </label>
-			<input type="text" size="9" placeholder="111.222.333" maxlength="11" name="cpf-1" id="7-1">
-			<label for="7-2"> - </label>
-			<input type="text" size="1" placeholder="44" maxlength="2" name="cpf-2" id="7-2">
-		</fieldset><br>
-		
-		<fieldset name="dadosEndereco"> <legend>Dados de Endereço</legend>
-			<label for="8"><br>Rua: </label>
-			<input type="text" size="16" maxlength="12" name="rua" id="8">
-			<label for="9">Numero: </label>
-			<input type="text" name="numero" size="3" id="9">
-			<label for="10"><br><br>Bairro: </label>
-			<input type="text" name="bairro" size="16" maxlength="12" id="10">
-			
-			<label for="lista_estados"><br><br>Estado: </label>
-				<input id="lista_estados" size="16" type="text" name="lista_estados" list="estados">
-				<datalist id="estados">
-					<option value="Acre" selected=""> </option>
-					<option value="Alagoas"> </option>
-					<option value="Amapá"></option>
-					<option value="Amazonas"></option>
-					<option value="Bahia"></option>
-					<option value="Ceará"></option>
-					<option value="Distrito Federal"></option>
-					<option value="Espírito Santo"></option>
-					<option value="Goiás"></option>
-					<option value="Maranhão"></option>
-					<option value="Mato Grosso"></option>
-					<option value="Mato Grosso do Sul"></option>
-					<option value="Minas Gerais"></option>
-					<option value="Pará"></option>
-					<option value="Paraíba"></option>
-					<option value="Paraná"></option>
-					<option value="Pernambuco"></option>
-					<option value="Piauí"></option>
-					<option value="Rio de Janeiro"></option>
-					<option value="Rio Grande do Norte"></option>
-					<option value="Rio Grande do Sul"></option>
-					<option value="Rondônia"></option>
-					<option value="Roraima"></option>
-					<option value="Santa Catarina"></option>
-					<option value="São Paulo"></option>
-					<option value="Sergipe"></option>
-					<option value="Tocantins"></option>
-				</datalist>
+	Opções:<br>
+		<select name="nomeMenu" size="7" multiple="">
+		<optgroup label="Linguagens para Web">
+			<option value="1" > HTML </option>
+			<option value="2"> CSS </option>
+			<option value="3" selected=""> JavaScript </option>
+		</optgroup>
 
-			<label for="11"><br><br>Cidade: </label>
-			<input type="text" name="cidade" size="16" maxlength="12" id="11">
-			<label for="12-1"><br><br>CEP: </label>
-			<input type="text" name="cep-1" size="3" maxlength="5" id="12-1">
-			<label for="12-2"> - </label>
-			<input type="text" name="cep-2" size="1" maxlength="3" id="12-2">
-		</fieldset><br>
-
-		<fieldset name="dadosLogin"> <legend>Dados de login</legend>
-			<label for="13"><br>E-mail: </label>
-			<input type="email" name="email" size="30" maxlength="50" id="13">
-			<label for="14"><br><br>Imagem de perfil: </label>
-			<input type="file" name="imagem" id="14">
-			<label for="15"><br><br>Login de usuário: </label>
-			<input type="text" name="login" size="20" maxlength="30" id="15">
-			<label for="16-1"><br><br>Senha: </label>
-			<input type="password" name="password-1" id="16-1">
-			<label for="16-2"><br><br>Confirme a senha: </label>
-			<input type="password" name="password-2" id="16-2">
-		</fieldset><br>
-
-		<fieldset name="pesquisaInteresses"><legend>Pesquisa de Interesse: </legend>
-			<p>Você deseja trabalhar como Webmaster?</p>
-
-			<p>O que vocẽ deseja aprender?</p>
-
-
-		</fieldset>
+		<optgroup label="Linguagens para Desktop">
+			<option value="6"> C </option>
+			<option value="5"> C++ </option>
+			<option value="4"> Java </option>
+		</optgroup>
+		</select>
 	</form>
+
+	<form>
+	Múltipla escolha:<br>
+		<select name="nomeMenu" size="7" multiple="">
+		<optgroup label="Linguagens para Web">
+			<option value="1" > HTML </option>
+			<option value="2"> CSS </option>
+			<option value="3" selected=""> JavaScript </option>
+		</optgroup>
+
+		<optgroup label="Linguagens para Desktop">
+			<option value="6"> C </option>
+			<option value="5"> C++ </option>
+			<option value="4"> Java </option>
+		</optgroup>
+		</select>
+	</form>
+
+	<form>
+		<textarea rows="10" cols="40" maxlength="400" >Digite seu texto aqui dentro.</textarea>
+	</form>
+
+	<form>
+		<input type="file" name="html">
+		<input type="email" name="">
+		<input type="date" name="">
+		<input type="month" name="">
+		<input type="week" name="">
+		<input type="time" name="">
+		<input type="datetime" name="">
+		<input type="datetime-local" name="">
+		<input type="search" name="">
+		<input type="number" name="">
+		<input type="range" name="">
+		<input type="color" name="">
+		<input type="tel" name="">
+		<input type="url" name="">
+	</form>
+
+	<!--	
+		<form>
+			<input id="country_name" name="country_name" type="text" list="country">
+			<input type="button" name="salvar">
+				<datalist id="country">
+					<option value="Afeganistão">
+					<option value="Albânia">
+					<option value="Algéria">
+					<option value="Andorra">
+					<option value="Angola">
+				</datalist>
+		</form>
+	-->
 
 </body>
 </html>
