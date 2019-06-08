@@ -1,0 +1,64 @@
+body{
+	font: italic bold 15px "Oswald", sans-serif;
+	
+	/*font-family: "Oswald", sans-serif;
+	font-size: 20px;*/
+	/*color: #082d8e;*/
+	
+	color: yellow;
+	background: rgba(238,127,166, 0.50) url("https://vignette.wikia.nocookie.net/warhammer40k/images/5/50/EmperorsWisdom.jpg/revision/latest?cb=20110727213356") no-repeat scroll;
+	background-size: 150%;
+
+	/*background-image: url(https://vignette.wikia.nocookie.net/warhammer40k/images/5/50/EmperorsWisdom.jpg/revision/latest?cb=20110727213356);
+	background-attachment: scroll;
+	background-repeat: no-repeat;*/
+	
+	text-align: justify-all;
+	text-indent: 250px;
+	text-decoration: underline;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+
+ 	margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+
+    border-top: 150px;
+    border-right: 250px;
+    border-left: 175px;
+    border-bottom: 150px;
+
+    padding: 50px 45px 50px 45px;
+
+}
+
+body::selection{
+	color: green;
+	background-color: black; 
+}
+
+h1:after{
+	display: inline-block;
+	margin: 0 10px 4px 0;
+	height: 1.5px;
+	content: " ";
+	text-shadow: none;
+	background-color: #999;
+	width: 70px;
+}
+
+h1:before{
+	display: inline-block;
+	margin: 0 4px 10px 0;
+	height: 1.5px;
+	content: " ";
+	text-shadow: none;
+	background-color: #999;
+	width: 70px;
+}
+
+
+	p:hover{background-color: green;}
+
+
