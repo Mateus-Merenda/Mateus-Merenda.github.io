@@ -1,10 +1,23 @@
-li{
-	list-style: none;
-	text-decoration: none;
-	padding-right: 5px;
-    padding-top: 5px;
-    float: left;
+ol{
+	li{
+		list-style: none;
+		text-decoration: none;
+		padding-right: 5px;
+		padding-top: 5px;
+		float: left;
+	}
 }
+
+ul{
+	li{	
+		list-style: none;
+		text-decoration: none;
+		padding-right: 5px;
+   		padding-top: 5px;
+	}
+}
+	
+
 
 a{
 	color: black;
