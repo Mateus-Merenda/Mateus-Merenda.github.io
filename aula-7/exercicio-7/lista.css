@@ -1,6 +1,6 @@
 ol{
+	list-style-type: none;
 	li{
-		list-style: none;
 		text-decoration: none;
 		padding-right: 5px;
 		padding-top: 5px;
@@ -9,16 +9,14 @@ ol{
 }
 
 ul{
+	list-style-type: none;
 	li{	
-		list-style: none;
 		text-decoration: none;
 		padding-right: 5px;
    		padding-top: 5px;
 	}
 }
 	
-
-
 a{
 	color: black;
 	display: block;
@@ -30,4 +28,4 @@ a{
 	text-align: center;
 }
 
-	a:hover {color: red;}
+a:hover {color: red;}
