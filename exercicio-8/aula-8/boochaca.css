@@ -1,0 +1,23 @@
+.container {
+	max-width: 400px;
+	margin: left;
+	border: 5px solid navy;
+}
+
+.item {
+	margin: 5px;
+	background: grey;
+	color: green;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+a{
+	color: black;
+	display: block;
+    font: bold 25px Tahoma, sans-serif;
+	background-color: gray;
+	text-decoration: none;
+	text-align: center;
+}

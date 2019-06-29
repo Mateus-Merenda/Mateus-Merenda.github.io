@@ -1,0 +1,47 @@
+h1{
+	background-color: grey;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+footer{
+	background-color: grey;
+	color: white;
+	clear: right; 
+}
+
+nav{
+	float: left;
+	width: 200px;
+}
+
+section{
+	margin-left: 200px;
+	border-left: 4px solid black;
+    margin-bottom: -16px;
+    margin-top: -20px;
+}
+
+ul{
+	float: left;
+	list-style-type: none;
+	text-decoration: none;
+	/*padding-right: 5px;*/
+	/*padding-top: 5px;*/
+}
+	
+a{
+	color: black;
+	display: block;
+	min-width: 150px;
+	max-width: 400px;
+    font: bold 25px Tahoma, sans-serif;
+	background-color: gray;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover{
+	color: red;
+}
