@@ -3,6 +3,14 @@ body{
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
+#insp{
+	float: left;
+}
+
+aside{
+	float: right;
+}
+
 nav
 	ul{
 		list-style-type: none;
