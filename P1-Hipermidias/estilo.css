@@ -1,0 +1,27 @@
+body{
+	font-style: normal;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+nav
+	ul{
+		list-style-type: none;
+		float: left;
+	}
+	
+	#botoes-1{
+		margin: 1px;
+		display: block;
+		padding-left: 750px;
+	}
+
+	#botoes-2{
+		width: 20px;
+	}
+
+	li{
+		display: inline-block;
+		text-decoration: none;
+		width: 10%;
+	}
+}
