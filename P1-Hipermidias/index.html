@@ -8,14 +8,13 @@
 	</head>
 	
 	<body>
-		<div class="grid">
-
-			<header id="Inicio">
-				<figure>
+		<div id="grid">
+			<header id="Cabecalho">
+				<figure id="Imagem_Cabecacalho" id="Imagem">
 					<img src="https://vestibular.mundoeducacao.bol.uol.com.br/upload/vestibular/-5bc74f3405ceb.jpg" height="120" title="LOGO" width="180" alt="LOGO">
 				</figure>
 				
-				<ul>
+				<ul class="Lista">
 					<li><a href="">Home</a></li>
 					<li><a href="">Gaelige</a></li>
 					<li><a href="">Sitemap</a></li>
@@ -24,15 +23,15 @@
 					<li>Text: A A A</li>
 				</ul>
 
-				<form action="https://www.google.com/search" method="get">
+				<form class="Cabecalho_Lateral" action="https://www.google.com/search" method="get">
 					<span id="2">Find a School</span>        
 					<input type="text" name="q" size="20" maxlength="15" title="as" placeholder="Site Search">
 					<input type="submit" value="OK">
 					<a href=""><br>Advanced Search</a>
 				</form>
 				
-				<nav class="Topo">
-					<ul>
+				<nav id="Topo">
+					<ul class="Lista">
 						<li><a href="">Parents</a></li>
 						<li><a href="">Teachers</a></li>
 						<li><a href="">Schools and Colleges</a></li>
@@ -42,31 +41,30 @@
 
 			</header>
 
-		<nav class="Lateral">
-		
-		<figure>
-			<img src="https://pics.me.me/welcome-my-child-3123522.png" height="150" title="welcome" width="210" alt="welcome">
-		</figure>
+		<nav id="Lateral">
+			<figure id="Macaco">
+				<img src="https://pics.me.me/welcome-my-child-3123522.png" height="150" title="welcome" width="210" alt="welcome">
+			</figure>
 
-		<ul class="Menu-Lateral">
-			<li><a href="">The Department</a></li>
-			<li><a href="">The Education System</a></li>
-			<li><a href="">News & Events</a></li>
-			<li><a href="">Publications</a></li>
-			<li><a href="">Circulars & Forms</a></li>
-			<li><a href="">Construction Documents</a></li>
-		</ul>
-
-		<section class="Popular">
-			<h2>Most Popular</h2>
-			<ul>
-				<li><a href="">> School Holidays</a></li>
-				<li><a href="">> School Inspection Reports</a></li>
-				<li><a href="">> National School Annual Census</a></li>
-				<li><a href="">> Student Grant Schemes</a></li>
-				<li><a href="">> State Examinations Comission</a></li>
+			<ul id="Menu-Lateral">
+				<li><a href="">The Department</a></li>
+				<li><a href="">The Education System</a></li>
+				<li><a href="">News & Events</a></li>
+				<li><a href="">Publications</a></li>
+				<li><a href="">Circulars & Forms</a></li>
+				<li><a href="">Construction Documents</a></li>
 			</ul>
-		</section>
+
+			<section id="Popular">
+				<h2>Most Popular</h2>
+				<ul>
+					<li><a href="">> School Holidays</a></li>
+					<li><a href="">> School Inspection Reports</a></li>
+					<li><a href="">> National School Annual Census</a></li>
+					<li><a href="">> Student Grant Schemes</a></li>
+					<li><a href="">> State Examinations Comission</a></li>
+				</ul>
+			</section>
 		</nav>
 
 		<aside>
@@ -96,11 +94,11 @@
 		</aside>
 
 		<main>
-			<article class="Novidade">
+			<article id="Novidade">
 				<header>
-					<p><h1>What's New</h1>
+					<p><h1 class="Cabecalho_Main">What's New</h1>
 					<a href="">78 school inspection reports established</a>
-					<a href="">More News</a>
+					<a href="" class="Cabecalho_Lateral">More News</a>
 				</header>
 
 				<figure><br>
@@ -109,39 +107,58 @@
 				
 				19 January 2012<br>
 
-				The reports comprise 29 whole-school evaluations (WSEs) of primary schools, 8 WSEs of post-primary schools, 38 subject inspections and 3 programme evaluations.<br><br>
+				<p>The reports comprise 29 whole-school evaluations (WSEs) of primary schools, 8 WSEs of post-primary schools, 38 subject inspections and 3 programme evaluations.</p>
 
-				<footer>
+				<footer class="Datas">
+					<ol>
+						<li>13 January 2012 </li>
+						<li>09 January 2012 </li>
+						<li>29 December 2011 </li>
+					</ol>
+
 					<ul>
-						<li>13 January 2012    <a href="">DEIS Evaluation reports published</a><br></li>
-						<li>09 January 2012    <a href="">Minister Cannon launches Butchery Training Programme</a><br></li>
-						<li>29 December 2011    <a href="">Minister Quinn welcomes Second Level Student's Union proposals on naming the reformed junior cycle awards</a></li>
+						<li><a href="">DEIS Evaluation reports published</a></li>
+						<li><a href="">Minister Cannon launches Butchery Training Programme</a></li>
+						<li><a href="">Minister Quinn welcomes Second Level Student's Union proposals on naming the reformed junior cycle awards</a></li>
 					</ul>
 				</footer>
 			</article>
 
 			<article>
-				<p><h2>Newsticker</h2>
+				<p><h2 class="Cabecalho_Main">Newsticker</h2>
 				Submission entry for the SOLAS Consultation Paper closes at 5pm on Friday, 20th January 2012.
 			</article>
 
 			<article>
-				<p><h2>Calendar</h2>
-				25 - 26 January 2012    <a href="">TUI Congress, Limerick</a><br>
-				02 - 03 February 2012    <a href="">Migrant Education 8th Annual Conference, RDS Dublin</a><br>
-				14 - 16 March 2012    <a href="">Patronage Forum, Dublin Castle</a><br>
+				<header>
+					<h2 class="Cabecalho_Main">Calendar</h2>
+					<a href="" class="Cabecalho_Lateral">Events</a>
+				</header>
+				<div class="Datas">
+					<ol>
+						<li>25-26 January 2012</li>
+						<li>02-03 February 2012</li>
+						<li>14-16 March 2012</li>
+					</ol>
+
+					<ul>
+						<li><a href="">TUI Congress, Limerick</a></li>
+						<li><a href="">Migrant Education 8th Annual Conference, RDS Dublin</a></li>
+						<li><a href="">Patronage Forum, Dublin Castle</a></li>
+					</ul>
+				</div>
 			</article>
 		</main>
 
-		<footer class="Rodape">
-			<ul>
+		<footer id="Rodape">
+			<ul class="Lista">
 				<li><a href="">Content</a></li>
 				<li><a href="">Using this Website</a></li>
 				<li><a href="">Accessibility Statement</a></li>
-				<li><a href="">www.Gov.ie</a></li>
+				<li class="Ultimato"><a href="">www.Gov.ie</a></li>
 			</ul>
 
-			<a href="#Inicio">Page Top</a>
+			<a href="#Cabecalho">Page Top</a>
 
 			<p>Department of Education and Skills | An Rain Oldeachais Agus Scileanna</p>
 			</footer>
