@@ -1,35 +1,196 @@
 body{
-	font-style: normal;
+	margin-left: 2%;
+	margin-right: 2%;
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-#insp{
-	float: left;
+article{
+	background-color: #BBBEC4;
+	padding: 5px 15px 5px 5px;
+	margin: 10px 5px 10px 5px;
+
+	width: 90%;
+}
+
+article p{
+	grid-area: lower;
 }
 
 aside{
-	float: right;
+	grid-area: aside;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0px 0px 0px 0px;
 }
 
-nav
-	ul{
-		list-style-type: none;
-		float: left;
-	}
-	
-	#botoes-1{
-		margin: 1px;
-		display: block;
-		padding-left: 750px;
-	}
+#Topo li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 2px 50px 2px 50px;
+	border-style: solid;
+	border-width: 2px;
+}
 
-	#botoes-2{
-		width: 20px;
-	}
+#grid{
+	display: grid;
+	grid-template:	"head head head" auto 
+					"nav main aside" auto
+					"foot foot foot" auto
+					/ 20%  60%  20%;
+}
 
-	li{
-		display: inline-block;
-		text-decoration: none;
-		width: 10%;
-	}
+#Novidade{
+	display: grid;
+	grid-template: 	"head head head" 	auto
+					"cont main aside" 	auto
+					"cont main aside"	auto
+					"foot foot aside"	auto
+					/ auto;
+}
+
+#Novidade figure, .Inicio-main{
+	grid-area: cont;
+}
+
+main, #Novidade h2{
+	grid-area: main;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer, #Topo{
+	grid-area: foot;
+}
+
+p{
+	padding: 2px 2px 2px 2px;
+	margin: 2px 2px 2px 2px;
+}
+
+h2, h3, h4{
+	margin: 5px 5px 5px 0px;
+}
+
+header{
+	grid-area: head;
+	display: grid;
+	grid-template: "cont . top" 		auto
+					"cont .	aside"	 	auto
+					"cont foot 	foot"	auto
+					/30%  20%  50%;
+	margin-left: 5%;
+}
+
+#Lateral{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#Menu-Lateral{
+	padding-left: 0px;
+	min-width: 250px;
+}
+
+#Menu-Lateral li{
+	display: block;
+	margin-top: 10px;
+	padding: 2px 10px 2px 5px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+/**/
+header figure,.Novidade figure, header h1, header h2{
+	grid-area: a;
+}
+
+/**/
+header form, header a{
+	grid-area: c;
+	text-align: right;
+}
+
+#Popular ul{
+	list-style-type: none;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #BBBEC4;
+	width: auto;
+	padding: 10px 5px 10px 5px;
+}
+
+#Rodape{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	border-top-style: solid;
+	border-top-width: 2px;
+}
+
+#ImagemPrimaria{
+	position: relative;
+}
+
+#ImagemPrimaria-text{
+	position: absolute;
+	bottom: 15%;
+	right: 12%;
+	background-color: rgba(200, 200, 200, 0.75);
+
+	padding: 5px 2px 5px 2px;
+}
+
+#ImagemSecundaria{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 15em;
+	background-color: #BBBEC4;
+	height: 110px;
+}
+
+#ImagemSecundaria figure{
+	grid-area: a;
+	margin: 5px 5px 5px 5px;
+}
+
+#ImagemSecundaria h4{
+	grid-area: b;
+	margin: 5px 5px 5px 5px;
+}
+
+#Rodape ul{
+	margin-left: -50px;
+}
+
+footer{
+	justify-content: space-around;
+}
+
+header ul{
+	grid-area: b;
+	text-align: right;
+}
+
+header li{
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+
+nav{
+	grid-area: nav;
 }
