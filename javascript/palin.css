@@ -1,0 +1,15 @@
+body h1{
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	text-align: right;
+	background: cyan;
+}
+
+body{
+	background: red;
+}
+
+input{
+	float: right;
+	color: gold;
+	background: blue;
+}
